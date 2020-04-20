@@ -60,6 +60,7 @@ while not done: # outer loop
 
         else:
             exact, similar = search(word, allWords, deg)
-            print("Words found containing '" + word + "' -> " +   macroReplace(str(exact), ['[', ']']) + "\n")
-            print("Words found containing '" + word + "' -> " + macroReplace(str(similar), ['[', ']']) + "\n")
+
+            print("Words found containing '" + word + "' -> " + macroReplace(str(exact), ['[', ']']) + "\n")
+            print("Words found dist < " + str(deg) + " '" + word + "' -> " + macroReplace(str(similar), ['[', ']']) + "\n")
 
